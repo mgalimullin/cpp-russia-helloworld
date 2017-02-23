@@ -25,4 +25,4 @@ class HelloReuseConan(ConanFile):
 
     def test(self):
         # equal to ./bin/greet, but portable win: .\bin\greet
-self.run(os.sep.join([".","bin", "test_hello"]))
+        self.run(os.sep.join([".","bin", "test_hello"]))

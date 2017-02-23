@@ -22,4 +22,4 @@ class HelloConan(ConanFile):
         self.copy("*.a", dst="lib", src="lib")
 
     def package_info(self):
-self.cpp_info.libs = ["hello"]
+        self.cpp_info.libs = ["hello"]
