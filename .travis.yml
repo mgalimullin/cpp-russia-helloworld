@@ -2,13 +2,11 @@ dist: trusty
 language: cpp
 script:
   - mkdir build && cd build
-  - cmake .. -DCMAKE_BUILD_TYPE=$BUILD_TYPE
-  - cmake --build .
+  - cmake .. -DCMAKE_BUILD_TYPE=$BUILD_TYPE -DCMAKE_CXX_COMPILER=$COMPILER
+  - cmake --build . -- VERBOSE=1
   - ./hello
 
 env:
-  #DCMAKE_CXX_COMPILER берётся из COMPILER
-  # фича travis
   - BUILD_TYPE=Release COMPILER=g++-4.9
   - BUILD_TYPE=Release COMPILER=g++-5
   - BUILD_TYPE=Release COMPILER=g++-6
