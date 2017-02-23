@@ -9,3 +9,5 @@ set(${PROJECT_NAME}_SRC
 src/main.cpp
 
 )
+
+add_executable(${PROJECT_NAME} ${${PROJECT_NAME}_SRC})
