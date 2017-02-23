@@ -13,6 +13,4 @@ set(${PROJECT_NAME}_SRC
 
 add_library(${PROJECT_NAME} ${${PROJECT_NAME}_SRC})
 
-
-enable_testing()
-add_subdirectory(test)
+set_property(TARGET ${PROJECT_NAME} PROPERTY CXX_STANDARD 14)
