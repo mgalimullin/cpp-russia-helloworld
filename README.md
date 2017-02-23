@@ -1,0 +1,1 @@
+[![Build Status](https://travis-ci.org/mgalimullin/cpp-russia-helloworld.svg?branch=master)](https://travis-ci.org/mgalimullin/cpp-russia-helloworld)
