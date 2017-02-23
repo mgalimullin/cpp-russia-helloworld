@@ -2,7 +2,7 @@ dist: trusty
 language: cpp
 script:
   - mkdir build && cd build
-  - cmake .. -DCMAKE_CXX_COMPILER=g++  -6
+  - cmake .. -DCMAKE_CXX_COMPILER=g++-6
   - cmake --build .
   - ./hello
 
