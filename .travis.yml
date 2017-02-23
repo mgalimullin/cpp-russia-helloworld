@@ -2,13 +2,13 @@ dist: trusty
 language: cpp
 
 install:
-  - sh ./.travis/install.sh
+  - bash ./.travis/install.sh
 
 script:
-  - sh ./.travis/run.sh
+  - bash ./.travis/run.sh
 
 after_script:
-  - sh ./.travis/upload.sh
+  - bash ./.travis/upload.sh
 
 env:
   - BUILD_TYPE=Release C_COMPILER=gcc-4.9 CXX_COMPILER=g++-4.9
